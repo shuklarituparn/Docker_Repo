@@ -1,0 +1,28 @@
+docker run -d -p 80:80 dockersamples/101-tutorial
+
+You'll notice a few flags being used. Here's some more info on them:
+
+    -d - run the container in detached mode (in the background)
+    -p 80:80 - map port 80 of the host to port 80 in the container
+    dockersamples/101-tutorial - the image to use
+
+
+
+Three things that make up a  container
+
+1. Namespace
+2. Control Groups
+3. Union FileSystem
+
+
+Namespace wraps a global system resource in such a way that the process running inside it has own isolated instance of the global resource
+
+Cgroups are the linux kernel feature that allows process to be organised into heirarchial structure whose resources can be monitored and limited
+
+Union filesystem allows files and directories of sperate file system to be transparently overlaid forming  a single coherent file system
+
+
+
+
+
+
